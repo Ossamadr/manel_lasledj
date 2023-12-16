@@ -1,0 +1,330 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.landing {
+  width: 100%;
+  height: 100svh;
+  background-image: url(./images/bg.jpg);
+  background-size: cover;
+}
+.landing .header {
+  position: fixed;
+  margin: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+  height: 60px;
+  padding: 0 20px;
+  cursor: default;
+}
+.landing .header #pc {
+  list-style: none;
+}
+.landing .header #pc #active {
+  color: gold;
+}
+.landing .header #pc li {
+  display: inline-block;
+}
+.landing .header #pc li a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.landing .header #pc li a:hover {
+  color: gold;
+}
+.landing .header h3 {
+  font-weight: 900;
+  color: white;
+  transition: 0.5s;
+}
+.landing .header h3:hover {
+  letter-spacing: 2px;
+}
+.landing .landing-info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  padding: 0 5px;
+}
+.landing .landing-info h1 {
+  font-size: 40px;
+  max-width: 100%;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px #000;
+}
+.landing .landing-info p {
+  color: antiquewhite;
+  font-size: 25px;
+  text-shadow: 1px 1px #000;
+}
+@media (min-width: 769px) {
+  .landing .header {
+    width: 80%;
+  }
+  .landing #mobile {
+    display: none;
+  }
+  .landing #pc {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .landing .header {
+    width: 100%;
+    margin: 0;
+  }
+  .landing #pc {
+    display: none;
+  }
+  .landing #mobile {
+    display: block;
+    position: relative;
+  }
+  .landing #mobile #bar {
+    color: white;
+    font-size: 27px;
+    cursor: pointer;
+  }
+  .landing #mobile #mob {
+    position: absolute;
+    width: 200px;
+    background: white;
+    right: 0;
+    top: 50px;
+    border-bottom: 5px solid red;
+    border-radius: 10px;
+    margin: 0;
+  }
+  .landing #mobile #mob a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 3px;
+    display: block;
+    transition: 0.2s;
+  }
+  .landing #mobile #mob a:hover {
+    background: rgba(210, 210, 210, 0.839);
+  }
+}
+
+.about-us {
+  display: flex;
+  background: #222;
+}
+.about-us .info-about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about-us .info-about-us h3 {
+  color: white;
+  padding-left: 10px;
+}
+.about-us .info-about-us p {
+  padding-left: 10px;
+  color: rgb(204, 211, 217);
+  line-height: 1.8;
+}
+
+.landing-dresses {
+  overflow: hidden;
+  background-size: cover;
+  height: 50svh;
+  background: url(./images/dresses1.png);
+}
+.landing-dresses .landing-info {
+  padding: 0;
+}
+.landing-dresses .header {
+  position: fixed;
+  margin: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+  height: 60px;
+  padding: 0 20px;
+  cursor: default;
+}
+.landing-dresses .header #pc {
+  list-style: none;
+}
+.landing-dresses .header #pc #active {
+  color: gold;
+}
+.landing-dresses .header #pc li {
+  display: inline-block;
+}
+.landing-dresses .header #pc li a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.landing-dresses .header #pc li a:hover {
+  color: gold;
+}
+.landing-dresses .header h3 {
+  font-weight: 900;
+  color: white;
+  transition: 0.5s;
+}
+.landing-dresses .header h3:hover {
+  letter-spacing: 2px;
+}
+@media (min-width: 769px) {
+  .landing-dresses .header {
+    width: 80%;
+  }
+  .landing-dresses #mobile {
+    display: none;
+  }
+  .landing-dresses #pc {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .landing-dresses .header {
+    width: 100%;
+    margin: 0;
+  }
+  .landing-dresses #pc {
+    display: none;
+  }
+  .landing-dresses #mobile {
+    display: block;
+    position: relative;
+  }
+  .landing-dresses #mobile #bar {
+    color: white;
+    font-size: 27px;
+    cursor: pointer;
+  }
+  .landing-dresses #mobile #mob {
+    position: absolute;
+    width: 200px;
+    background: white;
+    right: 0;
+    top: 50px;
+    border-bottom: 5px solid red;
+    border-radius: 10px;
+  }
+  .landing-dresses #mobile #mob a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 3px;
+    display: block;
+    transition: 0.2s;
+  }
+  .landing-dresses #mobile #mob a:hover {
+    background: rgba(210, 210, 210, 0.839);
+  }
+}
+
+.my-dresses {
+  background: #222;
+  padding-bottom: 60px;
+}
+.my-dresses h2 {
+  color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+}
+.my-dresses .my-dresses-page .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+.my-dresses .my-dresses-page .container .card .image {
+  overflow: hidden;
+}
+.my-dresses .my-dresses-page .container .card .image img {
+  transition: 0.5s;
+}
+.my-dresses .my-dresses-page .container .card .image img:hover {
+  transform: scale(1.1);
+}
+
+.landing-info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  padding: 0 5px;
+}
+.landing-info h1 {
+  font-size: 50px;
+  max-width: 100%;
+  text-shadow: 1px 1px #000;
+}
+
+@media (min-width: 769px) {
+  .about-us h3 {
+    font-size: 40px;
+  }
+  .about-us p {
+    font-size: 20px;
+    margin: 20px 0;
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .about-us {
+    flex-direction: column;
+  }
+  .about-us h3 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  .about-us p {
+    font-size: 16px;
+    margin: 10px 0;
+    width: 100%;
+  }
+  .about-us .image-about-us {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+  .about-us .image-about-us img {
+    width: 70%;
+    height: 300px;
+  }
+}
+.hide {
+  display: none;
+}
+
+.header {
+  z-index: 10;
+}/*# sourceMappingURL=main.css.map */
